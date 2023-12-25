@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #7e7e7e;
+    transition:all .3s;
+}
+
+
+.calculatorCtr{
+    width: 300px;
+    border: black 1px solid;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: #1b1b1b;
+    position: relative;
+    transition:all .3s;
+}
+
+.btnColapse{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.button, .darkLight{
+    width: 98px;
+    height: 50px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #4b4b4b;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s;
+    transition:all .3s;
+}
+
+.button:hover{
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+.displayNumber{
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+#displayNumber{
+    font-size: 30px;
+    color: #fff;
+    height: 30px;
+    transition:all .3s;
+}
+
+
+
+.topNumber{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    font-size: 30px;
+    color: #fff;
+    width: 40%;
+    overflow: auto;
+    transition:all .3s;
+}
+
+
+
+
+
+
+
+
+.scroolBarCustom::-webkit-scrollbar {
+    width: 4px;
+    height: 2px;
+  }
+.scroolBarCustom::-webkit-scrollbar-thumb {
+    background-color: #353535;
+  }
+.scroolBarCustom::-webkit-scrollbar-track {
+    background-color: #707070;
+  }
+.scroolBarCustom::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
